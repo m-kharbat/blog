@@ -1,0 +1,14 @@
+{% extends 'blog/base.html' %}
+{% block title %} JNF {% endblock%}
+
+
+{% block content %}
+
+{% if articles %}
+    {% for post in articles  %}
+        <div class="index_post"><a href="{{ post.get_absolute_url }}">{{post.title}}</a></div>
+    {% endfor %}
+{% endif %}
+
+{% endblock content%}
+

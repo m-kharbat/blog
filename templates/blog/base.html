@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        {% load staticfiles %}
+
+        {# bootstrap css #}
+        <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
+        {# custom css #}
+        <link href="{% static "css/style.css" %}" rel="stylesheet">
+
+        {# google fonts #}
+        <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Poiret+One'>
+
+      </head>
+    <body>    
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+            <div class="container-fluid">
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    
+                    <div class="navbar-header page-scroll">
+                        <a class="navbar-brand" href="/">JULIA NF</a>
+                    </div>
+                    <ul class="soc">
+                        <li><a class="soc-github" href="http://github.com/julia-nf"></a></li>
+                        <li><a class="soc-linkedin" href="https://de.linkedin.com/in/julia-nieddu-fitremann-3423a582"></a></li>
+                        <li><a class="soc-tumblr" href="http://tagadajones.tumblr.com/"></a></li>
+                    </ul>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
+
+        <!-- Page Header -->
+        <!-- Set your background image for this header on the line below. -->
+        <header class="intro-header">
+            <div class="col-lg-6 col-md-6">
+                <div class="site-heading">
+                    <h1>salus</h1>
+                </div>
+            </div>
+        </header>
+
+    {% block content %}
+    {% endblock content %}
+
+    </body>
+    </html>
