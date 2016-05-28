@@ -3,12 +3,14 @@
 
 
 {% block content %}
-
-{% if articles %}
-    {% for post in articles  %}
-        <div class="index_post"><a href="{{ post.get_absolute_url }}">{{post.title}}</a></div>
-    {% endfor %}
-{% endif %}
-
+<div class="index-content"> 
+    <div class="col-md-8">
+        {% if articles %}
+            {% for post in articles  %}
+                <div class="index-post" style="content:url(post.image);"><a href="{{ post.get_absolute_url }}">{{post.title}}</a></div>
+            {% endfor %}
+        {% endif %}
+    </div>
+</div>
 {% endblock content%}
 
