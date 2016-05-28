@@ -48,6 +48,8 @@ html, body, #wrapper {
     color: darkgrey;
 }
 
+/* BLOG */
+
 /* base */
 .navbar-custom {
   background-color: #1D1E1A;
@@ -67,6 +69,7 @@ html, body, #wrapper {
 
 .internal-nav-buttons{
   float: right;
+  font-size: 20px;
 }
 
 .internal-nav-buttons li{
@@ -103,8 +106,19 @@ html, body, #wrapper {
   .intro-header .site-heading{
     text-align: left;
     padding-left: 10px;
+    padding-top: 140px;
     font-size: 40px;
   }
+}
+
+@media (max-width: 320px){
+  .intro-header{
+    height: 235px;
+  }
+  .intro-header .site-heading{
+    font-size: 32px;
+    padding-top: 150px;
+  }  
 }
 
 /* SOCIAL ICONS */
@@ -359,7 +373,7 @@ html, body, #wrapper {
   margin: auto;
 }
 
-@media (max-width: 360px){
+@media (max-width: 400px){
   .hide-xs{
     display: none;
   }
