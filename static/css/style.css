@@ -1,21 +1,48 @@
 /* INDEX */
 
-#index-body{
-    display: inline;
-    background-image: url("../media/index-background.png"); 
-    background-repeat: repeat;
+html, body, #wrapper {
+    width: 100%;
+    min-height: 100%;
+}
+
+#index-title{
+  font-size: 25px;
+  font-family: 'Poiret One', cursive;
+}
+
+@media (min-width: 768px) { 
+  #index-title{
+    font-size: 35px;
     font-family: 'Poiret One', cursive;
+  }
+}
+
+
+#index-subtitle{
+  font-size: 18px;
+  font-family: 'Poiret One', cursive;
+}
+
+#index-body{
+  display: inline;
+  background-image: url("../media/index-background.png"); 
+  background-repeat: repeat;
+  font-family: 'Poiret One', cursive;
 }
 
 #index-main{
     height:300px;
-    width:400px;
     margin:auto;
-    margin-top:20%;
+    margin-top:40%;
     text-align: center;
     color:lightgrey;
 }
 
+@media (min-width: 980px){
+  #index-main{
+    margin-top:20%;
+  }
+}
 #index-main a{
     text-decoration: none;
     color: darkgrey;
@@ -35,7 +62,16 @@
 }
 
 .navbar-custom .navbar-brand{
-  margin-top:7px;
+  margin-top: 7px;
+}
+
+.internal-nav-buttons{
+  float: right;
+}
+
+.internal-nav-buttons li{
+  float: right;
+  margin-top: 2px;
 }
 
 .intro-header {;
@@ -198,5 +234,13 @@
   width: 100%;
   height: 100%;
   text-decoration: none;
+}
+
+.index-articles{
+  border: 1px dotted black ;
+  width: 80%;
+  padding: 30px;
+  padding-bottom: 20px;
+  margin: auto;
 }
 
