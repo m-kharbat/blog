@@ -8,7 +8,6 @@
         <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
         {# custom css #}
         <link href="{% static "css/style.css" %}" rel="stylesheet">
-
         {# google fonts #}
         <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Poiret+One'>
 
@@ -19,40 +18,34 @@
         <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
             <div class="container-fluid">
 
-                <!-- Collect the nav links, forms, and other content for toggling -->
-
+                <div class="col-md-6 col-xs-6 internal-nav-buttons">
                     <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="/">Home</a>
-                        </li>
                         <li>
                             <a href="about.html">About</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="/">Home</a>
                         </li>
+
                     </ul>
-                    
-                    <div class="navbar-header page-scroll">
-                        <a class="navbar-brand" href="/">JULIA NF</a>
-                    </div>
-                    <ul class="soc">
+                </div>
+                <div class="col-md-6 col-xs-6 external-nav-buttons">
+                    <ul class="soc hide-xs">
                         <li><a class="soc-github" href="http://github.com/julia-nf"></a></li>
                         <li><a class="soc-linkedin" href="https://de.linkedin.com/in/julia-nieddu-fitremann-3423a582"></a></li>
                         <li><a class="soc-tumblr" href="http://tagadajones.tumblr.com/"></a></li>
                     </ul>
-                <!-- /.navbar-collapse -->
-            </div>
-            <!-- /.container -->
-        </nav>
-
-        <!-- Page Header -->
-        <!-- Set your background image for this header on the line below. -->
-        <header class="intro-header">
-            <div class="col-lg-6 col-md-6">
-                <div class="site-heading">
-                    <h1>salus</h1>
+                    <ul class="soc-small">
+                        <li><a class="soc-small-github" href="http://github.com/julia-nf"></a></li>
+                        <li><a class="soc-small-linkedin" href="https://de.linkedin.com/in/julia-nieddu-fitremann-3423a582"></a></li>
+                        <li><a class="soc-small-tumblr" href="http://tagadajones.tumblr.com/"></a></li>
+                    </ul>
                 </div>
+            </div>
+        </nav>
+        <header class="intro-header">
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                <div class="site-heading">JULIA NF BLOG</div>
             </div>
         </header>
 

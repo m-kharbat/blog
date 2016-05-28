@@ -71,7 +71,11 @@ html, body, #wrapper {
 
 .internal-nav-buttons li{
   float: right;
-  margin-top: 2px;
+  margin-top: 12px;
+}
+
+.external-nav-buttons{
+  float: left;
 }
 
 .intro-header {;
@@ -84,29 +88,24 @@ html, body, #wrapper {
   -o-background-size: cover;
   margin-bottom: 50px;
 }
-.intro-header .site-heading{
+
+.intro-header .site-heading {
   float:left;
   color: white;
-}
-
-
-.intro-header .site-heading {
-  padding-top: 100px;
-}
-
-.intro-header .site-heading {
   text-align: center;
-}
-.intro-header .site-heading h1{
+  padding-top: 125px;
+  padding-left:20px;
   margin-top: 0;
   font-size: 50px;
 }
 
-.intro-header .site-heading h1{
-  font-size: 80px;
+@media (max-width: 400px){
+  .intro-header .site-heading{
+    text-align: left;
+    padding-left: 10px;
+    font-size: 40px;
+  }
 }
-
-
 
 /* SOCIAL ICONS */
 
@@ -131,8 +130,9 @@ html, body, #wrapper {
 
 .soc {
     overflow:hidden;
-    width:50%;
-    margin:0; padding:0;
+    margin:0;
+    padding:0;
+    padding-top:10px;
     padding-left:10px;
     list-style:none;
 }
@@ -219,6 +219,121 @@ html, body, #wrapper {
 }
 
 
+/* SOCIAL ICONS SMALL */
+@font-face {
+    font-family: 'si';
+    src: url('../img/socicon-xs.eot');
+    src: url('../img/socicon-xs.eot?#iefix') format('embedded-opentype'),
+         url('../img/socicon-xs.woff') format('woff'),
+         url('../img/socicon-xs.ttf') format('truetype'),
+         url('../img/socicon-xs.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+ 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../img/socicon-small.svg) format(svg);
+    }
+}
+
+.soc-small {
+    overflow: hidden;
+    margin:0; padding:0;
+    padding-top: 25px;
+    list-style: none;
+}
+
+@media (min-width: 400px){
+  .soc-small {
+    display: none;
+  }
+}
+
+.soc-small li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+}
+
+.soc-small li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 29px;
+    height: 29px;
+    line-height: 29px;
+    font-size: 15px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 10px;
+    color: #ffffff;
+    background-color: none;
+}
+
+.soc-small a:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.soc-small-icon-last{
+    margin:0 !important;
+}
+
+.soc-small-github {
+    background-color: #B1F279;
+}
+.soc-small-github:before {
+    content:'Q';
+}
+.soc-small-linkedin {
+    background-color: #D82759;
+}
+.soc-small-linkedin:before {
+    content:'j';
+}
+.soc-small-tumblr {
+    background-color: #FFD757;
+}
+.soc-small-tumblr:before {
+    content:'z';
+}
+.soc-small-twitter {
+    background-color: #3B94D9;
+}
+.soc-small-twitter:before {
+    content:'a';
+}
+
+
 /* BLOG */
 
 /* blog index */
@@ -244,3 +359,8 @@ html, body, #wrapper {
   margin: auto;
 }
 
+@media (max-width: 360px){
+  .hide-xs{
+    display: none;
+  }
+}
