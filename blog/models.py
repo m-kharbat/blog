@@ -23,7 +23,7 @@ class Article(models.Model):
 	def save(self, *args, **kwargs):
 	        if not self.slug:
 	            self.slug = slugify(self.title)
-	        super(Post, self).save(*args, **kwargs)
+	        super(Article, self).save(*args, **kwargs)
 
 class Category(models.Model):
 	title = models.CharField(max_length=100, db_index=True)
