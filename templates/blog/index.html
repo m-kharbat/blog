@@ -1,16 +1,12 @@
 {% extends 'blog/base.html' %}
 {% block title %} JNF {% endblock%}
 
-
 {% block content %}
-<div class="index-content"> 
-    <div class="col-md-8">
+    <div class="index-content">
         {% if articles %}
             {% for post in articles  %}
-                <div class="index-post" style="content:url(post.image);"><a href="{{ post.get_absolute_url }}">{{post.title}}</a></div>
+                <div class="index-post" style="background-image:url({{post.link}});"><a href="{{ post.get_absolute_url }}">{{post.title}}</a></div>
             {% endfor %}
         {% endif %}
     </div>
-</div>
 {% endblock content%}
-
